@@ -65,39 +65,33 @@ footer {
   margin-top: 2rem;
 }
 
-/* Certifications section */
-#certifications {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.certificates-container {
+.cert-gallery {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
   justify-content: center;
-  gap: 20px;
+  padding: 1rem 0;
 }
 
-.certificate {
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
+.cert-gallery a {
+  flex: 1 1 200px;
   max-width: 300px;
   text-align: center;
 }
 
-.certificate img {
-  max-width: 100%;
+.cert-gallery img {
+  width: 100%;
   height: auto;
-  border-radius: 8px;
+  border: 2px solid #007BFF;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.certificate p {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #333;
+.cert-gallery img:hover {
+  transform: scale(1.05);
 }
+
 
 @media (max-width: 600px) {
   nav a {
