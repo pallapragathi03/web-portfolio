@@ -88,6 +88,40 @@ footer {
   transition: transform 0.3s ease;
   cursor: pointer;
 }
+#certificates {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#certificates h2 {
+  font-size: 2rem;
+  color: #333;
+  border-bottom: 3px solid #f04e3e;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.cert-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.cert-card {
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+}
+
+.cert-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 
 /* Responsive Nav */
