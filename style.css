@@ -70,13 +70,7 @@ certificates {
   padding: 2rem 1rem;
 }
 
-#certificates h2 {
-  font-size: 2rem;
-  color: #111;
-  border-bottom: 3px solid #f04e3e;
-  display: inline-block;
-  margin-bottom: 2rem;
-}
+border-bottom: 3px solid #007BFF;  /* This is blue *
 
 .cert-section {
   display: flex;
