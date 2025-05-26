@@ -65,6 +65,7 @@ footer {
   margin-top: 2rem;
 }
 
+/* Certificates section layout */
 #certifications {
   text-align: center;
   padding: 2rem 1rem;
@@ -78,44 +79,56 @@ footer {
   margin-top: 1rem;
 }
 
-.cert-section img {
-  width: 90%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
-}
-
-.cert-section img:hover {
-  transform: scale(1.03);
-}
-#certifications {
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.cert-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-.cert-section img {
+.cert-img {
   width: 90%;
   max-width: 500px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-.cert-section img:hover {
+.cert-img:hover {
   transform: scale(1.03);
 }
 
+/* Lightbox styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover {
+  color: #ccc;
+}
 
 /* Responsive Nav */
 @media (max-width: 600px) {
