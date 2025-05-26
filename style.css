@@ -106,6 +106,14 @@ footer {
   height: auto;
   border-radius: 8px;
 }
+.cert-item:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+.cert-item img {
+  border: 1px solid #ccc;
+}
+
 
 
 @media (max-width: 600px) {
