@@ -65,26 +65,38 @@ footer {
   margin-top: 2rem;
 }
 
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
+/* Certifications section */
+#certifications {
+  text-align: center;
+  padding: 40px 20px;
 }
 
-.cert-item {
-  background: #fff;
-  padding: 1rem;
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certificate {
+  background-color: #f9f9f9;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-width: 300px;
   text-align: center;
 }
 
-.cert-item img {
+.certificate img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  margin-bottom: 0.5rem;
+}
+
+.certificate p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
 }
 
 @media (max-width: 600px) {
